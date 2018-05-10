@@ -3,8 +3,8 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model mdm\admin\models\AuthItem */
-/* @var $context mdm\admin\components\ItemController */
+/* @var $model elephantsgroup\admin\models\AuthItem */
+/* @var $context elephantsgroup\admin\components\ItemController */
 
 $context = $this->context;
 $labels = $context->labels();

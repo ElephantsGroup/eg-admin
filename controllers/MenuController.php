@@ -1,14 +1,15 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace elephantsGroup\admin\controllers;
 
 use Yii;
-use mdm\admin\models\Menu;
-use mdm\admin\models\searchs\Menu as MenuSearch;
+use elephantsGroup\admin\models\Menu;
+use elephantsGroup\admin\models\searchs\Menu as MenuSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use mdm\admin\components\Helper;
+use elephantsGroup\admin\components\Helper;
+use elephantsGroup\base\EGController;
 
 /**
  * MenuController implements the CRUD actions for Menu model.
@@ -16,7 +17,7 @@ use mdm\admin\components\Helper;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class MenuController extends Controller
+class MenuController extends EGController
 {
 
     /**

@@ -1,11 +1,12 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace elephantsGroup\admin\controllers;
 
 use Yii;
-use mdm\admin\models\Route;
+use elephantsGroup\admin\models\Route;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use elephantsGroup\base\EGController;
 
 /**
  * Description of RuleController
@@ -13,7 +14,7 @@ use yii\filters\VerbFilter;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class RouteController extends Controller
+class RouteController extends EGController
 {
     public function behaviors()
     {

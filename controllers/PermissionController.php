@@ -1,9 +1,10 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace elephantsGroup\admin\controllers;
 
-use mdm\admin\components\ItemController;
+use elephantsGroup\admin\components\ItemController;
 use yii\rbac\Item;
+use elephantsGroup\base\EGController;
 
 /**
  * PermissionController implements the CRUD actions for AuthItem model.

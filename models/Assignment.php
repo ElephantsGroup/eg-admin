@@ -1,9 +1,9 @@
 <?php
 
-namespace mdm\admin\models;
+namespace elephantsGroup\admin\models;
 
-use mdm\admin\components\Configs;
-use mdm\admin\components\Helper;
+use elephantsGroup\admin\components\Configs;
+use elephantsGroup\admin\components\Helper;
 use Yii;
 
 /**
@@ -12,7 +12,7 @@ use Yii;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 2.5
  */
-class Assignment extends \mdm\admin\BaseObject
+class Assignment extends \elephantsGroup\admin\BaseObject
 {
     /**
      * @var integer User id

@@ -32,7 +32,7 @@ before_script:
   - mysql --version
 
   # initialize databases
-  - mysql -e 'CREATE DATABASE mdm_admin_test;';
+  - mysql -e 'CREATE DATABASE elephantsgroup_admin_test;';
   
 script:
   - |

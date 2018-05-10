@@ -1,17 +1,17 @@
 <?php
 
-namespace mdm\admin\components;
+namespace elephantsGroup\admin\components;
 
 use Yii;
 use yii\caching\TagDependency;
-use mdm\admin\models\Menu;
+use elephantsGroup\admin\models\Menu;
 
 /**
  * MenuHelper used to generate menu depend of user role.
  * Usage
  * 
  * ```
- * use mdm\admin\components\MenuHelper;
+ * use elephantsGroup\admin\components\MenuHelper;
  * use yii\bootstrap\Nav;
  *
  * echo Nav::widget([

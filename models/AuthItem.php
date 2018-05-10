@@ -1,9 +1,9 @@
 <?php
 
-namespace mdm\admin\models;
+namespace elephantsGroup\admin\models;
 
-use mdm\admin\components\Configs;
-use mdm\admin\components\Helper;
+use elephantsGroup\admin\components\Configs;
+use elephantsGroup\admin\components\Helper;
 use Yii;
 use yii\base\Model;
 use yii\helpers\Json;

@@ -1,17 +1,17 @@
 {
-    "name": "mdmsoft/yii2-admin",
+    "name": "elephantsgroup/eg-admin",
     "description": "RBAC Auth manager for Yii2 ",
-    "keywords": ["yii", "admin", "auth", "rbac"],
+    "keywords": ["yii", "yii2", "admin", "auth", "rbac"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/mdmsoft/yii2-admin/issues",
-        "source": "https://github.com/mdmsoft/yii2-admin"
+        "issues": "https://github.com/elephantsgroup/eg-admin/issues",
+        "source": "https://github.com/elephantsgroup/eg-admin"
     },
     "authors": [
         {
-            "name": "Misbahul Munir",
-            "email": "misbahuldmunir@gmail.com"
+            "name": "Jalal Jaberi",
+            "email": "proodoo@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mdm\\admin\\": ""
+            "elephantsGroup\\admin\\": ""
         }
     },
     "extra": {

@@ -1,10 +1,10 @@
 <?php
 
-namespace mdm\admin\models\form;
+namespace elephantsGroup\admin\models\form;
 
 use Yii;
 use yii\base\Model;
-use mdm\admin\models\User;
+use elephantsGroup\admin\models\User;
 
 /**
  * Login form

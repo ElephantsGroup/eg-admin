@@ -1,15 +1,15 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace elephantsGroup\admin\controllers;
 
 use Yii;
-use mdm\admin\models\form\Login;
-use mdm\admin\models\form\PasswordResetRequest;
-use mdm\admin\models\form\ResetPassword;
-use mdm\admin\models\form\Signup;
-use mdm\admin\models\form\ChangePassword;
-use mdm\admin\models\User;
-use mdm\admin\models\searchs\User as UserSearch;
+use elephantsGroup\admin\models\form\Login;
+use elephantsGroup\admin\models\form\PasswordResetRequest;
+use elephantsGroup\admin\models\form\ResetPassword;
+use elephantsGroup\admin\models\form\Signup;
+use elephantsGroup\admin\models\form\ChangePassword;
+use elephantsGroup\admin\models\User;
+use elephantsGroup\admin\models\searchs\User as UserSearch;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -17,11 +17,12 @@ use yii\filters\VerbFilter;
 use yii\web\NotFoundHttpException;
 use yii\base\UserException;
 use yii\mail\BaseMailer;
+use elephantsGroup\base\EGController;
 
 /**
  * User controller
  */
-class UserController extends Controller
+class UserController extends EGController
 {
     private $_oldMailPath;
 
@@ -51,7 +52,7 @@ class UserController extends Controller
             if (Yii::$app->has('mailer') && ($mailer = Yii::$app->getMailer()) instanceof BaseMailer) {
                 /* @var $mailer BaseMailer */
                 $this->_oldMailPath = $mailer->getViewPath();
-                $mailer->setViewPath('@mdm/admin/mail');
+                $mailer->setViewPath('@elephantsGroup/admin/mail');
             }
             return true;
         }

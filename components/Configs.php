@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin\components;
+namespace elephantsGroup\admin\components;
 
 use Yii;
 use yii\caching\Cache;
@@ -16,7 +16,7 @@ use yii\rbac\ManagerInterface;
  * ```
  * return [
  *
- *     'mdm.admin.configs' => [
+ *     'elephantsGroup.admin.configs' => [
  *         'db' => 'customDb',
  *         'menuTable' => '{{%admin_menu}}',
  *         'cache' => [
@@ -30,7 +30,7 @@ use yii\rbac\ManagerInterface;
  * or use [[\Yii::$container]]
  *
  * ```
- * Yii::$container->set('mdm\admin\components\Configs',[
+ * Yii::$container->set('elephantsGroup\admin\components\Configs',[
  *     'db' => 'customDb',
  *     'menuTable' => 'admin_menu',
  * ]);
@@ -40,9 +40,9 @@ use yii\rbac\ManagerInterface;
  * @since 1.0
  */
 
-class Configs extends \mdm\admin\BaseObject
+class Configs extends \elephantsGroup\admin\BaseObject
 {
-    const CACHE_TAG = 'mdm.admin';
+    const CACHE_TAG = 'elephantsGroup.admin';
 
     /**
      * @var ManagerInterface .
@@ -137,7 +137,7 @@ class Configs extends \mdm\admin\BaseObject
     public static function instance()
     {
         if (self::$_instance === null) {
-            $type = ArrayHelper::getValue(Yii::$app->params, 'mdm.admin.configs', []);
+            $type = ArrayHelper::getValue(Yii::$app->params, 'elephantsGroup.admin.configs', []);
             if (is_array($type) && !isset($type['class'])) {
                 $type['class'] = static::className();
             }

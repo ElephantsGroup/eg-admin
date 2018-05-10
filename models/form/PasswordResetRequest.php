@@ -1,8 +1,8 @@
 <?php
-namespace mdm\admin\models\form;
+namespace elephantsGroup\admin\models\form;
 
 use Yii;
-use mdm\admin\models\User;
+use elephantsGroup\admin\models\User;
 use yii\base\Model;
 
 /**
@@ -22,7 +22,7 @@ class PasswordResetRequest extends Model
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'exist',
-                'targetClass' => 'mdm\admin\models\User',
+                'targetClass' => 'elephantsGroup\admin\models\User',
                 'filter' => ['status' => User::STATUS_ACTIVE],
                 'message' => 'There is no user with such email.'
             ],

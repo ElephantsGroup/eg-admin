@@ -1,8 +1,9 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace elephantsGroup\admin\controllers;
 
 use Yii;
+use elephantsGroup\base\EGController;
 
 /**
  * DefaultController
@@ -10,7 +11,7 @@ use Yii;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class DefaultController extends \yii\web\Controller
+class DefaultController extends EGController
 {
 
     /**
@@ -19,7 +20,7 @@ class DefaultController extends \yii\web\Controller
     public function actionIndex($page = 'README.md')
     {
         if (strpos($page, '.png') !== false) {
-            $file = Yii::getAlias("@mdm/admin/{$page}");
+            $file = Yii::getAlias("@elephantsGroup/admin/{$page}");
             return Yii::$app->getResponse()->sendFile($file);
         }
         return $this->render('index', ['page' => $page]);

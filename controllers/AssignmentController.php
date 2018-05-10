@@ -1,13 +1,14 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace elephantsGroup\admin\controllers;
 
 use Yii;
-use mdm\admin\models\Assignment;
-use mdm\admin\models\searchs\Assignment as AssignmentSearch;
+use elephantsGroup\admin\models\Assignment;
+use elephantsGroup\admin\models\searchs\Assignment as AssignmentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use elephantsGroup\base\EGController;
 
 /**
  * AssignmentController implements the CRUD actions for Assignment model.
@@ -15,7 +16,7 @@ use yii\filters\VerbFilter;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class AssignmentController extends Controller
+class AssignmentController extends EGController
 {
     public $userClassName;
     public $idField = 'id';
@@ -32,7 +33,7 @@ class AssignmentController extends Controller
         parent::init();
         if ($this->userClassName === null) {
             $this->userClassName = Yii::$app->getUser()->identityClass;
-            $this->userClassName = $this->userClassName ? : 'mdm\admin\models\User';
+            $this->userClassName = $this->userClassName ? : 'elephantsGroup\admin\models\User';
         }
     }
 

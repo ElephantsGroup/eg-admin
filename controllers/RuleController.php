@@ -1,15 +1,16 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace elephantsGroup\admin\controllers;
 
 use Yii;
-use mdm\admin\models\BizRule;
+use elephantsGroup\admin\models\BizRule;
 use yii\web\Controller;
-use mdm\admin\models\searchs\BizRule as BizRuleSearch;
+use elephantsGroup\admin\models\searchs\BizRule as BizRuleSearch;
 use yii\filters\VerbFilter;
 use yii\web\NotFoundHttpException;
-use mdm\admin\components\Helper;
-use mdm\admin\components\Configs;
+use elephantsGroup\admin\components\Helper;
+use elephantsGroup\admin\components\Configs;
+use elephantsGroup\base\EGController;
 
 /**
  * Description of RuleController
@@ -17,7 +18,7 @@ use mdm\admin\components\Configs;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class RuleController extends Controller
+class RuleController extends EGController
 {
 
     /**

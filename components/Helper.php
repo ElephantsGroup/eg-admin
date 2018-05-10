@@ -1,8 +1,8 @@
 <?php
 
-namespace mdm\admin\components;
+namespace elephantsGroup\admin\components;
 
-use mdm\admin\models\Route;
+use elephantsGroup\admin\models\Route;
 use Yii;
 use yii\caching\TagDependency;
 use yii\helpers\ArrayHelper;
