@@ -1,6 +1,6 @@
 <?php
 
-use elephantsgroup\admin\AnimateAsset;
+use elephantsGroup\admin\AnimateAsset;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\YiiAsset;

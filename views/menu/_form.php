@@ -2,9 +2,9 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use elephantsgroup\admin\models\Menu;
+use elephantsGroup\admin\models\Menu;
 use yii\helpers\Json;
-use elephantsgroup\admin\AutocompleteAsset;
+use elephantsGroup\admin\AutocompleteAsset;
 
 /* @var $this yii\web\View */
 /* @var $model elephantsgroup\admin\models\Menu */

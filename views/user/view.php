@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use elephantsgroup\admin\components\Helper;
+use elephantsGroup\admin\components\Helper;
 
 /* @var $this yii\web\View */
 /* @var $model elephantsgroup\admin\models\User */

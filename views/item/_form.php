@@ -2,10 +2,10 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use elephantsgroup\admin\components\RouteRule;
-use elephantsgroup\admin\AutocompleteAsset;
+use elephantsGroup\admin\components\RouteRule;
+use elephantsGroup\admin\AutocompleteAsset;
 use yii\helpers\Json;
-use elephantsgroup\admin\components\Configs;
+use elephantsGroup\admin\components\Configs;
 
 /* @var $this yii\web\View */
 /* @var $model elephantsgroup\admin\models\AuthItem */

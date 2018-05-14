@@ -2,8 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use elephantsgroup\admin\components\RouteRule;
-use elephantsgroup\admin\components\Configs;
+use elephantsGroup\admin\components\RouteRule;
+use elephantsGroup\admin\components\Configs;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */

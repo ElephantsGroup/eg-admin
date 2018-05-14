@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use elephantsgroup\admin\components\Helper;
+use elephantsGroup\admin\components\Helper;
 
 /* @var $this yii\web\View */
 /* @var $searchModel elephantsgroup\admin\models\searchs\User */

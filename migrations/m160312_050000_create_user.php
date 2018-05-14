@@ -30,7 +30,12 @@ class m160312_050000_create_user extends Migration
                 'created_at' => $this->integer()->notNull(),
                 'updated_at' => $this->integer()->notNull(),
                 ], $tableOptions);
-        }
+        } else {
+			if ($db->schema->getTableSchema($userTable, true)->getColumn('status') == null)
+				$this->addColumn($userTable, 'status', $this->smallInteger()->notNull()->defaultValue(10));
+			if ($db->schema->getTableSchema($userTable, true)->getColumn('password_reset_token') == null)
+				$this->addColumn($userTable, 'password_reset_token', $this->string());
+		}
     }
 
     public function down()
@@ -39,6 +44,9 @@ class m160312_050000_create_user extends Migration
         $db = Configs::userDb();
         if ($db->schema->getTableSchema($userTable, true) !== null) {
             $this->dropTable($userTable);
-        }
+        } else {
+			$this->dropColumn($userTable, 'password_reset_token');
+			$this->dropColumn($userTable, 'status');
+		}
     }
 }

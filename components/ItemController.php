@@ -10,6 +10,7 @@ use yii\web\NotFoundHttpException;
 use yii\base\NotSupportedException;
 use yii\filters\VerbFilter;
 use yii\rbac\Item;
+use elephantsGroup\base\EGController;
 
 /**
  * AuthItemController implements the CRUD actions for AuthItem model.
@@ -20,7 +21,7 @@ use yii\rbac\Item;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class ItemController extends Controller
+class ItemController extends EGController
 {
 
     /**
