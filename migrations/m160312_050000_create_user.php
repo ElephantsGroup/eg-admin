@@ -43,8 +43,6 @@ class m160312_050000_create_user extends Migration
         $userTable = Configs::instance()->userTable;
         $db = Configs::userDb();
         if ($db->schema->getTableSchema($userTable, true) !== null) {
-            $this->dropTable($userTable);
-        } else {
 			$this->dropColumn($userTable, 'password_reset_token');
 			$this->dropColumn($userTable, 'status');
 		}

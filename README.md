@@ -1,21 +1,15 @@
-RBAC Manager for Yii 2
-======================
-GUI manager for RABC (Role Base Access Control) Yii2. Easy to manage authorization of user :smile:.
+# eg-user
+[![Build Status](https://img.shields.io/travis/elephantsgroup/eg-admin/master.svg?style=flat-square)](https://travis-ci.org/elephantsgroup/eg-admin)
+[![Packagist Version](https://img.shields.io/packagist/v/elephantsgroup/eg-admin.svg?style=flat-square)](https://packagist.org/packages/elephantsgroup/eg-admin)
+[![PHP Version](https://img.shields.io/packagist/php-v/elephantsgroup/eg-admin.svg?style=flat-square)](https://packagist.org/packages/elephantsgroup/eg-admin)
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=my-website&style=flat-square)](http://elephantsgroup.com)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
-[![Latest Unstable Version](https://poser.pugx.org/elephantsgroup/eg-admin/v/unstable)](https://packagist.org/packages/elephantsgroup/eg-admin)
-[![Total Downloads](https://poser.pugx.org/elephantsgroup/eg-admin/downloads.png)](https://packagist.org/packages/elephantsgroup/eg-admin)
-[![Daily Downloads](https://poser.pugx.org/elephantsgroup/eg-admin/d/daily)](https://packagist.org/packages/elephantsgroup/eg-admin)
-[![License](https://poser.pugx.org/elephantsgroup/eg-admin/license)](https://packagist.org/packages/elephantsgroup/eg-admin)
-[![Reference Status](https://www.versioneye.com/php/elephantsgroup:eg-admin/reference_badge.svg)](https://www.versioneye.com/php/elephantsgroup:eg-admin/references)
-[![Build Status](https://img.shields.io/travis/elephantsgroup/eg-admin.svg)](http://travis-ci.org/elephantsgroup/eg-admin)
-[![Dependency Status](https://www.versioneye.com/php/elephantsgroup:eg-admin/dev-master/badge.png)](https://www.versioneye.com/php/elephantsgroup:eg-admin/dev-master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/elephantsgroup/eg-admin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/elephantsgroup/eg-admin/?branch=master)
-[![Code Climate](https://img.shields.io/codeclimate/github/elephantsgroup/eg-admin.svg)](https://codeclimate.com/github/elephantsgroup/eg-admin)
+GUI manager for RABC (Role Base Access Control) Yii2 based on [mdmsoft Yii2-admin](https://github.com/mdmsoft/yii2-admin)
 
-Documentation
--------------
-> **Important: If you install version 3.x, please see [this readme](https://github.com/elephantsgroup/eg-admin/blob/3.master/README.md#upgrade-from-2x).**
+## Documentation
 
+[Read the Documentation for master](docs/README.md)
 
 - [Change Log](CHANGELOG.md).
 - [Authorization Guide](http://www.yiiframework.com/doc-2.0/guide-security-authorization.html). Important, read this first before you continue.
@@ -25,8 +19,7 @@ Documentation
 - [Using Menu](docs/guide/using-menu.md).
 - [Api](https://elephantsgroup.github.io/eg-admin/index.html).
 
-Installation
-------------
+##Installation
 
 ### Install With Composer
 
@@ -35,21 +28,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require elephantsgroup/eg-admin "~1.0"
-or
-php composer.phar require elephantsgroup/eg-admin "~2.0"
-```
-
-or for the dev-master
-
-```
-php composer.phar require elephantsgroup/eg-admin "2.x-dev"
+php composer.phar require elephantsgroup/eg-admin "~1"
 ```
 
 Or, you may add
 
 ```
-"elephantsgroup/eg-admin": "~2.0"
+"elephantsgroup/eg-admin": "~1"
 ```
 
 to the require section of your `composer.json` file and execute `php composer.phar update`.
@@ -64,12 +49,10 @@ return [
     ...
     'aliases' => [
         '@elephantsgroup/admin' => 'path/to/your/extracted',
-        // for example: '@elephantsgroup/admin' => '@app/extensions/elephantsgroup/eg-admin-2.0.0',
+        // for example: '@elephantsgroup/admin' => '@app/extensions/elephantsgroup/eg-admin-1.0.0',
         ...
     ]
 ];
 ```
 
 [**More...**](docs/guide/configuration.md)
-
-[screenshots](https://goo.gl/r8RizT)
