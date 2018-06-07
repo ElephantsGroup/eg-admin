@@ -1,4 +1,4 @@
-# eg-user
+# eg-admin
 [![Build Status](https://img.shields.io/travis/elephantsgroup/eg-admin/master.svg?style=flat-square)](https://travis-ci.org/elephantsgroup/eg-admin)
 [![Packagist Version](https://img.shields.io/packagist/v/elephantsgroup/eg-admin.svg?style=flat-square)](https://packagist.org/packages/elephantsgroup/eg-admin)
 [![PHP Version](https://img.shields.io/packagist/php-v/elephantsgroup/eg-admin.svg?style=flat-square)](https://packagist.org/packages/elephantsgroup/eg-admin)
