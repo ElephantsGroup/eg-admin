@@ -4,6 +4,8 @@ Yii2 Admin Change Log
 # developement
 
 - fixed migration/down issue (drop user table)
+- add auth_management auth in migration/up
+  - assign auth_management to admin user
 - changed CHANGELOG (this file)
 
 ## v1.0.0 [15 May 2018]
